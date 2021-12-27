@@ -42,6 +42,8 @@ a {
 	background: rgb(0, 0, 0);
 	position: fixed;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 
 }
 
@@ -49,15 +51,19 @@ a {
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	text-align: center;
-	letter-spacing: 3px;
+	letter-spacing: 10px;
+
 }
 
 .logo h1 {
 	font-size: 30px;
 	color: white;
-
+	
 }
-
+.efecto{
+	transform:scaleX(5% to 100%,);
+	transition-duration: 10s;
+}
 
 .menu {
 
@@ -76,12 +82,17 @@ a {
 	font-weight: 400;
 	width: 10%;
 	justify-content: center;
-	transition: 0.7s ease all;
+	transition: 0.8s ease all;
 	font-size: 16px;
+	letter-spacing: 1px;
 }
 
 .menu a:hover {
 	color: aquamarine;
+
+}
+.menu .menuselect{
+	color:aquamarine;
 }
 
 /* ---------- Articulos ----------*/
@@ -231,7 +242,7 @@ a {
 }
 
 /*---------- FOOTER ----------*/
-.contenedor .footer {
+.footer {
 	background: rgb(0, 0, 0);
 	font-size: 12px;
 	grid-area: footer;
@@ -332,7 +343,109 @@ span {
 }
 
 
+/* -------------------------------------------GALERIACONTACTO----------------------------------------- */
+.grid-container-galeria{
+	background-image: url(../img/background\ img-container.jpg);
+	background-attachment: fixed;
+	background-position-y: 90%;
+	background-position-x: 50%;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+		'header			header   	header'
+		'img-container		img-container 	img-container'
+		'img-container		img-container 	img-container'
+		'footer	 		footer 		footer';
+}
 
+
+.img-container{
+
+	grid-area: img-container;
+	color: white;
+	background-color: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	font-size: 18px;
+	line-height: 25px;
+	height: fit-content;
+	gap: 30px;
+	margin-top: 120px;
+	margin-left: 2%;
+	margin-right: 2%;
+	grid-template-areas:
+	'item1 item1 item1'
+	'item2 item3 item4'
+	'item2 item5 item6'
+	'item7 item8 item6'
+	'item9 item9 item9' ;
+	
+	
+}
+.item{
+	background-color: brown;
+	min-height: 300px;;
+	min-width: 300px;	
+}
+
+.item1{
+	background-image: url();
+	background-size: cover;
+	grid-area: item1;
+	min-height: 400px;
+}
+
+.item2{
+	background-image: url();
+	background-size: cover;
+	grid-area: item2;
+}
+
+.item3{
+	background-image: url();
+	background-size: cover;
+	grid-area: item3;
+}
+
+.item4{
+	background-image: url();
+	background-size: cover;
+	grid-area: item4;
+}
+
+.item5{
+	background-image: url();
+	background-size: cover;
+	grid-area: item5;
+}
+
+.item6{
+	background-image: url();
+	background-size: cover;
+	grid-area: item6;
+}
+
+.item7{
+	background-image: url();
+	background-size: cover;
+	grid-area: item7;
+}
+.item8{
+	background-image: url();
+	background-size: cover;
+	grid-area: item8;
+}
+.item9{
+	background-image: url();
+	background-size: cover;
+	grid-area: item9;
+	min-height: 400px;
+}
 
 
 
@@ -340,7 +453,7 @@ span {
 
 @media only screen and (min-width: 200px) and (max-width: 480px) {
 	.body {
-		font-size: 100px;
+		font-size: 16px;
 	}
 
 	.contenedor {
@@ -368,7 +481,7 @@ span {
 
 
 	.articulo.destacado {
-		font-size: 12px;
+		font-size: 16px;
 
 	}
 
@@ -383,7 +496,7 @@ span {
 
 	.destacado .titulo a {
 		color: white;
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.contenedor {
@@ -436,7 +549,7 @@ span {
 	}
 
 	.contenedor {
-		font-size: 30px;
+		font-size: 16px;
 	}
 
 	.menu a {
