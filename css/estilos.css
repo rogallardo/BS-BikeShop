@@ -78,7 +78,7 @@ a {
 	font-weight: 400;
 	width: 10%;
 	justify-content: center;
-	transition: 0.1s ease-in-out;
+	transition: 0.3s ease-in-out;
 	font-size: 16px;
 	letter-spacing: 1px;
 }
@@ -109,7 +109,7 @@ a {
 }
 
 .contenedor-imagen {
-	width: 100%;
+	width: 30%;
 }
 
 .articulo .titulo a {
@@ -166,6 +166,7 @@ a {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	align-self: flex-end;
+	transition: 0.3s;
 }
 
 .btn-link:hover {
@@ -178,16 +179,18 @@ a {
 	color: rgb(0, 0, 0);
 	display: inline-block;
 	padding: 10px;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	align-self: flex-end;
+	transition: 0.3s;
 }
 
 .btn-link1:hover {
 	text-decoration: none;
 	color: aquamarine;
+	background-color: black;
 
 }
 
@@ -219,8 +222,10 @@ a {
 
 .sidebar .menu-sidebar {
 	width: 100%;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	background: rgb(0, 0, 0);
+	justify-items: flex-end;
 
 }
 
@@ -232,6 +237,7 @@ a {
 	font-size: 16px;
 	text-transform: uppercase;
 	justify-content: center;
+	transition: 0.5s;
 }
 
 .sidebar .menu-sidebar a:hover {
@@ -620,7 +626,7 @@ span {
 		font-weight: 400;
 		width: 10%;
 		justify-content: center;
-		transition: 0.7s ease all;
+		transition: 0.3s ease all;
 		font-size: 12px;
 	}
 	/* ---------- Articulo Destacado ----------*/
