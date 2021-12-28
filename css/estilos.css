@@ -564,25 +564,28 @@ span {
 	background-image: url(../img/item4.jpg);
 	background-size: cover;
 	grid-area: item4;
-	background-position-y: 90%;
+	background-position-y: 50%;
 }
 
 .item5{
 	background-image: url(../img/item5.jpg);
 	background-size: cover;
 	grid-area: item5;
+	background-position-y: 50%;
 }
 
 .item6{
 	background-image: url(../img/item6.jpg);
 	background-size: cover;
 	grid-area: item6;
+	background-position-y: 50%;
 }
 
 .item7{
 	background-image: url(../img/item7.jpg);
 	background-size: cover;
 	grid-area: item7;
+	background-position-y: 40%;
 }
 .item8{
 	background-image: url(../img/item8.jpg);
